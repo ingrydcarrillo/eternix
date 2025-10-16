@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Eternix Tools — Insumos para Marmoraria</title>
+  <meta name="description" content="Eternix Tools: insumos, abrasivos, colas e acessórios para marmorarias com qualidade e agilidade." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="assets/favicon.svg">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXX'); // Substitua pelo seu ID do GA4
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="#">Eternix Tools</a>
+      <nav class="nav">
+        <a href="#produtos">Produtos</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato" class="btn">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <h1>Insumos e ferramentas para marmoraria.</h1>
+        <p>Qualidade, durabilidade e confiança em cada produto.</p>
+        <a href="#contato" class="btn btn-primary">Fale conosco</a>
+      </div>
+      <img src="assets/hero-illustration.svg" alt="Ferramentas e insumos Eternix" class="hero-img" />
+    </div>
+  </section>
+
+  <section id="produtos" class="section">
+    <div class="container">
+      <h2>Principais Produtos</h2>
+      <div class="grid-3">
+        <div class="card">
+          <h3>Abrasivos</h3>
+          <p>Discos, lixas e polidores de alta performance para mármore e granito.</p>
+        </div>
+        <div class="card">
+          <h3>Colas e Selantes</h3>
+          <p>Adesivos de alta resistência para colagem e reparos em pedras.</p>
+        </div>
+        <div class="card">
+          <h3>Ferramentas</h3>
+          <p>Equipamentos e acessórios que facilitam o dia a dia da marmoraria.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre" class="section alt">
+    <div class="container">
+      <h2>Sobre a Eternix Tools</h2>
+      <p>A Eternix Tools é especializada em insumos para marmorarias, oferecendo produtos de qualidade e suporte técnico confiável.</p>
+      <ul>
+        <li>Atendimento ágil e personalizado</li>
+        <li>Entrega rápida em todo o Brasil</li>
+        <li>Parcerias com as melhores marcas do setor</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contato" class="section">
+    <div class="container">
+      <h2>Contato</h2>
+      <p>Entre em contato e solicite seu orçamento:</p>
+      <a class="btn" href="mailto:contato@eternixtools.com">contato@eternixtools.com</a>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="ano"></span> Eternix Tools — Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('ano').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
