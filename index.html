@@ -14,10 +14,11 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'G-XXXXXXX'); // Substitua pelo seu ID do GA4
+    gtag('config', 'G-XXXXXXX');
   </script>
 </head>
 <body>
+  <!-- HEADER -->
   <header class="site-header">
     <div class="container">
       <a class="logo" href="#">Eternix</a>
@@ -29,13 +30,13 @@
     </div>
   </header>
 
+  <!-- HERO -->
   <section class="hero">
     <div class="container hero-inner">
       <div class="hero-text">
         <h1>Insumos e ferramentas para marmoraria.</h1>
         <p>Qualidade, durabilidade e confiança em cada produto.</p>
 
-        <!-- Botões de contato -->
         <a href="mailto:importadorask2025@gmail.com" class="btn btn-primary" style="margin-right:8px;">Fale conosco</a>
 
         <a href="https://www.instagram.com/eternix.oficial" target="_blank"
@@ -46,78 +47,59 @@
         </a>
 
         <a href="https://wa.me/5511941093427" target="_blank"
-           style="background:#25D366;color:#fff;border:none;padding:10px 16px;border-radius:999px;
-                  display:inline-flex;align-items:center;gap:6px;margin-top:8px;text-decoration:none;">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
-               alt="WhatsApp" style="width:20px;height:20px;">
+           style="background:#25D366;color:#fff;border:none;padding:10px 16px;border-radius:999px;display:inline-flex;align-items:center;gap:6px;margin-top:8px;text-decoration:none;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width:20px;height:20px;">
           Fale conosco no WhatsApp
         </a>
       </div>
+
       <img src="hero-eternix.png" alt="Ferramentas e insumos Eternix" class="hero-img" />
     </div>
   </section>
 
-  <!-- Seção de Produtos -->
+  <!-- PRODUTOS -->
   <section id="produtos" class="section">
     <div class="container">
       <h2>Principais Produtos</h2>
 
       <div class="grid-3">
-        <!-- Card Abrasivos -->
+        <!-- CARD: ABRASIVOS -->
         <div class="card">
           <h3>Abrasivos</h3>
           <p>Discos, lixas e polidores de alta performance para mármore e granito.</p>
 
-          <!-- Catálogo completo de abrasivos -->
+          <!-- Catálogo de Abrasivos (sem legenda, só card clicável) -->
           <h3>Catálogo de Abrasivos</h3>
           <p>Clique nas imagens para visualizar os catálogos em tamanho completo:</p>
 
-          <div class="grid-3">
-            <figure class="card">
-              <a href="lixas%20para%20acabamento.png" class="zoom" target="_blank">
-                <img src="lixas%20para%20acabamento.png" alt="Lixas para acabamento" class="product-img" loading="lazy">
-              </a>
-              <figcaption>Lixas para Acabamento</figcaption>
-            </figure>
+          <div class="grid-3 catalogo-abrasivos">
+            <a href="lixas%20para%20acabamento.png" class="card zoom" target="_blank" aria-label="Lixas para acabamento">
+              <div class="thumb"><img src="lixas%20para%20acabamento.png" alt="Lixas para acabamento" class="product-img" loading="lazy"></div>
+            </a>
 
-            <figure class="card">
-              <a href="escovas.png" class="zoom" target="_blank">
-                <img src="escovas.png" alt="Escovas" class="product-img" loading="lazy">
-              </a>
-              <figcaption>Escovas</figcaption>
-            </figure>
+            <a href="escovas.png" class="card zoom" target="_blank" aria-label="Escovas">
+              <div class="thumb"><img src="escovas.png" alt="Escovas" class="product-img" loading="lazy"></div>
+            </a>
 
-            <figure class="card">
-              <a href="itens%20diversos.png" class="zoom" target="_blank">
-                <img src="itens%20diversos.png" alt="Itens diversos (1)" class="product-img" loading="lazy">
-              </a>
-              <figcaption>Itens Diversos (1)</figcaption>
-            </figure>
+            <a href="itens%20diversos.png" class="card zoom" target="_blank" aria-label="Itens Diversos (1)">
+              <div class="thumb"><img src="itens%20diversos.png" alt="Itens diversos (1)" class="product-img" loading="lazy"></div>
+            </a>
 
-            <figure class="card">
-              <a href="itens%20diversos%20II.png" class="zoom" target="_blank">
-                <img src="itens%20diversos%20II.png" alt="Itens diversos (2)" class="product-img" loading="lazy">
-              </a>
-              <figcaption>Itens Diversos (2)</figcaption>
-            </figure>
+            <a href="itens%20diversos%20II.png" class="card zoom" target="_blank" aria-label="Itens Diversos (2)">
+              <div class="thumb"><img src="itens%20diversos%20II.png" alt="Itens diversos (2)" class="product-img" loading="lazy"></div>
+            </a>
 
-            <figure class="card">
-              <a href="brocas.png" class="zoom" target="_blank">
-                <img src="brocas.png" alt="Brocas" class="product-img" loading="lazy">
-              </a>
-              <figcaption>Brocas</figcaption>
-            </figure>
+            <a href="brocas.png" class="card zoom" target="_blank" aria-label="Brocas">
+              <div class="thumb"><img src="brocas.png" alt="Brocas" class="product-img" loading="lazy"></div>
+            </a>
 
-            <figure class="card">
-              <a href="pratinho.png" class="zoom" target="_blank">
-                <img src="pratinho.png" alt="Pratinhos" class="product-img" loading="lazy">
-              </a>
-              <figcaption>Pratinhos</figcaption>
-            </figure>
+            <a href="pratinho.png" class="card zoom" target="_blank" aria-label="Pratinhos">
+              <div class="thumb"><img src="pratinho.png" alt="Pratinhos" class="product-img" loading="lazy"></div>
+            </a>
           </div>
 
-          <!-- Outros produtos Abrasivos -->
-          <div class="grid-2" style="margin-top: 40px;">
+          <!-- Mini-grid produtos (como antes) -->
+          <div class="grid-2" style="margin-top:40px;">
             <div class="card">
               <a href="discos-serra.png" target="_blank">
                 <img src="discos-serra.png" alt="Discos de Serra Eternix" class="product-img" />
@@ -134,12 +116,13 @@
           </div>
         </div>
 
-        <!-- Outras categorias -->
+        <!-- CARD: COLAS -->
         <div class="card">
           <h3>Colas e Selantes</h3>
           <p>Adesivos de alta resistência para colagem e reparos em pedras.</p>
         </div>
 
+        <!-- CARD: FERRAMENTAS -->
         <div class="card">
           <h3>Ferramentas</h3>
           <p>Equipamentos e acessórios que facilitam o dia a dia da marmoraria.</p>
@@ -148,7 +131,7 @@
     </div>
   </section>
 
-  <!-- Seção Sobre -->
+  <!-- SOBRE -->
   <section id="sobre" class="section alt">
     <div class="container">
       <h2>Sobre a Eternix</h2>
@@ -161,7 +144,7 @@
     </div>
   </section>
 
-  <!-- Seção Contato -->
+  <!-- CONTATO -->
   <section id="contato" class="section">
     <div class="container">
       <h2>Contato</h2>
@@ -170,15 +153,46 @@
     </div>
   </section>
 
+  <!-- FOOTER -->
   <footer class="site-footer">
     <div class="container">
       <p>© <span id="ano"></span> Eternix — Todos os direitos reservados.</p>
     </div>
   </footer>
 
+  <!-- Lightbox opcional (funciona se você já tem o CSS e o JS correspondentes) -->
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <span class="close" aria-label="Fechar">&times;</span>
+    <img id="lightbox-img" src="" alt="Imagem ampliada">
+  </div>
+
   <script>
+    // Ano do rodapé
     document.getElementById('ano').textContent = new Date().getFullYear();
+
+    // Lightbox simples (se preferir abrir em popup, remova target="_blank" dos links .zoom)
+    const lb = document.getElementById('lightbox');
+    const lbImg = document.getElementById('lightbox-img');
+    const closeBtn = lb.querySelector('.close');
+
+    document.querySelectorAll('a.zoom').forEach(a => {
+      a.addEventListener('click', (e) => {
+        if (!a.target || a.target !== '_blank') { e.preventDefault(); }
+        if (a.getAttribute('target') === '_blank') return; // se quiser abrir nova aba, mantém
+        lbImg.src = a.getAttribute('href');
+        lb.classList.add('open');
+        lb.setAttribute('aria-hidden', 'false');
+      });
+    });
+
+    function closeLb() {
+      lb.classList.remove('open');
+      lb.setAttribute('aria-hidden', 'true');
+      lbImg.src = '';
+    }
+    closeBtn.addEventListener('click', closeLb);
+    lb.addEventListener('click', (e) => { if (e.target === lb) closeLb(); });
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeLb(); });
   </script>
 </body>
 </html>
-
