@@ -15,7 +15,7 @@
       w[l]=w[l]||[];
       w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});
       var f=d.getElementsByTagName(s)[0],
-      j=d.createElement(s), dl=l!='dataLayer'?'&l='+l:'';
+          j=d.createElement(s), dl=l!='dataLayer'?'&l='+l:'';
       j.async=true;
       j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
       f.parentNode.insertBefore(j,f);
@@ -151,9 +151,33 @@
         </div>
 
         <!-- Categoria: Ferramentas -->
-        <div class="card">
+        <div class="card" id="ferramentas">
           <h3>Ferramentas</h3>
           <p>Equipamentos e acessórios que facilitam o dia a dia da marmoraria.</p>
+
+          <h3>Catálogo de Ferramentas</h3>
+          <p>Clique nas imagens para visualizar em tamanho completo:</p>
+
+          <div class="grid-3 catalogo-abrasivos">
+            <a href="medicao.png" class="card zoom" target="_blank" aria-label="Medição">
+              <div class="thumb">
+                <img src="medicao.png" alt="Medição" class="product-img" loading="lazy">
+              </div>
+            </a>
+
+            <a href="pratinho.png" class="card zoom" target="_blank" aria-label="Pratinhos">
+              <div class="thumb">
+                <img src="pratinho.png" alt="Pratinhos" class="product-img" loading="lazy">
+              </div>
+            </a>
+
+            <!-- arquivo tem espaço no nome -> use %20 -->
+            <a href="transporte%20de%20chapas.png" class="card zoom" target="_blank" aria-label="Transporte de Chapas">
+              <div class="thumb">
+                <img src="transporte%20de%20chapas.png" alt="Transporte de Chapas" class="product-img" loading="lazy">
+              </div>
+            </a>
+          </div>
         </div>
       </div>
     </div>
