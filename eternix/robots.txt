@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Impede indexação de áreas de teste (caso crie futuramente)
+Disallow: /tmp/
+Disallow: /preview/
+
+# Indica ao Google e outros buscadores onde está o mapa do site
+Sitemap: https://eternix.com.br/sitemap.xml
