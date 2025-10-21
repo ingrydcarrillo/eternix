@@ -3,11 +3,47 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Eternix — Insumos para Marmoraria</title>
-  <meta name="description" content="Eternix: insumos, abrasivos, colas e acessórios para marmorarias com qualidade e agilidade." />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+
+  <!-- SEO básico -->
+  <title>Eternix | Insumos e Ferramentas para Marmoraria com Qualidade e Confiança</title>
+  <meta name="description" content="Insumos, abrasivos, colas e acessórios para marmorarias. Qualidade, durabilidade e entrega ágil em todo o Brasil. Fale com a Eternix e faça seu orçamento." />
+  <link rel="canonical" href="https://eternix.com.br/" />
+
+  <!-- Favicon -->
   <link rel="icon" href="assets/favicon.svg">
+
+  <!-- Tipografia -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Open Graph / Facebook / WhatsApp -->
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Eternix">
+  <meta property="og:title" content="Eternix | Insumos e Ferramentas para Marmoraria">
+  <meta property="og:description" content="Tudo para sua marmoraria: abrasivos, colas e acessórios com qualidade e entrega rápida.">
+  <meta property="og:url" content="https://eternix.com.br/">
+  <meta property="og:image" content="https://eternix.com.br/hero-eternix.png">
+  <meta property="og:image:alt" content="Ferramentas e insumos Eternix para marmoraria">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Eternix | Insumos e Ferramentas para Marmoraria">
+  <meta name="twitter:description" content="Abrasivos, colas e acessórios com qualidade e entrega ágil.">
+  <meta name="twitter:image" content="https://eternix.com.br/hero-eternix.png">
+
+  <!-- Sitemap (opcional, ajuda alguns crawlers) -->
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
+
+  <!-- Tema (Android/Windows) -->
+  <meta name="theme-color" content="#0fb79c" />
+
+  <!-- Preload do hero para LCP mais rápido -->
+  <link rel="preload" as="image" href="hero-eternix.png" imagesrcset="hero-eternix.png 1x">
 
   <!-- Google Tag Manager -->
   <script>
@@ -22,6 +58,22 @@
     })(window,document,'script','dataLayer','GTM-M7RHZJDN');
   </script>
   <!-- End Google Tag Manager -->
+
+  <!-- JSON-LD: Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Eternix",
+    "url": "https://eternix.com.br/",
+    "logo": "https://eternix.com.br/assets/favicon.svg",
+    "sameAs": [
+      "https://www.instagram.com/eternix.oficial",
+      "https://wa.me/5511941093427"
+    ],
+    "description": "Insumos, abrasivos, colas e acessórios para marmorarias com qualidade e entrega ágil."
+  }
+  </script>
 </head>
 
 <body>
@@ -35,8 +87,8 @@
   <!-- HEADER -->
   <header class="site-header">
     <div class="container">
-      <a class="logo" href="#">Eternix</a>
-      <nav class="nav">
+      <a class="logo" href="/" aria-label="Página inicial da Eternix">Eternix</a>
+      <nav class="nav" aria-label="Navegação principal">
         <a href="#produtos">Produtos</a>
         <a href="#sobre">Sobre</a>
         <a href="#contato" class="btn">Contato</a>
@@ -48,36 +100,36 @@
   <section class="hero">
     <div class="container hero-inner">
       <div class="hero-text">
-        <h1>Insumos e ferramentas para marmoraria.</h1>
+        <h1>Insumos e ferramentas para marmoraria</h1>
         <p>Qualidade, durabilidade e confiança em cada produto.</p>
 
         <a href="mailto:importadorask2025@gmail.com" class="btn btn-primary" style="margin-right:8px;">
           Fale conosco
         </a>
 
-        <a href="https://www.instagram.com/eternix.oficial" target="_blank"
+        <a href="https://www.instagram.com/eternix.oficial" target="_blank" rel="noopener noreferrer"
            class="btn btn-primary" style="display:inline-flex;align-items:center;gap:6px;margin-right:8px;text-decoration:none;">
           <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
-               alt="Instagram" style="width:20px;height:20px;vertical-align:middle;">
+               alt="Instagram" width="20" height="20" style="vertical-align:middle;">
           Siga-nos no Instagram
         </a>
 
-        <a href="https://wa.me/5511941093427" target="_blank"
+        <a href="https://wa.me/5511941093427" target="_blank" rel="noopener noreferrer"
            style="background:#25D366;color:#fff;border:none;padding:10px 16px;border-radius:999px;
                   display:inline-flex;align-items:center;gap:6px;margin-top:8px;text-decoration:none;">
           <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
-               alt="WhatsApp" style="width:20px;height:20px;">
+               alt="WhatsApp" width="20" height="20">
           Fale conosco no WhatsApp
         </a>
       </div>
-      <img src="hero-eternix.png" alt="Ferramentas e insumos Eternix" class="hero-img" />
+      <img src="hero-eternix.png" alt="Ferramentas e insumos Eternix" class="hero-img" loading="eager" fetchpriority="high" />
     </div>
   </section>
 
   <!-- PRODUTOS -->
   <section id="produtos" class="section">
     <div class="container">
-      <h2>Principais Produtos</h2>
+      <h2>Principais produtos para marmoraria</h2>
 
       <div class="grid-3">
         <!-- Categoria: Abrasivos -->
@@ -89,54 +141,54 @@
           <p>Clique nas imagens para visualizar os catálogos em tamanho completo:</p>
 
           <div class="grid-3 catalogo-abrasivos">
-            <a href="lixas%20para%20acabamento.png" class="card zoom" target="_blank">
+            <a href="lixas%20para%20acabamento.png" class="card zoom" target="_blank" rel="noopener noreferrer">
               <div class="thumb">
-                <img src="lixas%20para%20acabamento.png" alt="Lixas para acabamento" class="product-img">
+                <img src="lixas%20para%20acabamento.png" alt="Lixas para acabamento Eternix" class="product-img" loading="lazy" decoding="async">
               </div>
             </a>
 
-            <a href="escovas.png" class="card zoom" target="_blank">
+            <a href="escovas.png" class="card zoom" target="_blank" rel="noopener noreferrer">
               <div class="thumb">
-                <img src="escovas.png" alt="Escovas" class="product-img">
+                <img src="escovas.png" alt="Escovas para marmoraria Eternix" class="product-img" loading="lazy" decoding="async">
               </div>
             </a>
 
-            <a href="itens%20diversos.png" class="card zoom" target="_blank">
+            <a href="itens%20diversos.png" class="card zoom" target="_blank" rel="noopener noreferrer">
               <div class="thumb">
-                <img src="itens%20diversos.png" alt="Itens diversos (1)" class="product-img">
+                <img src="itens%20diversos.png" alt="Itens diversos para acabamento de pedra" class="product-img" loading="lazy" decoding="async">
               </div>
             </a>
 
-            <a href="itens%20diversos%20II.png" class="card zoom" target="_blank">
+            <a href="itens%20diversos%20II.png" class="card zoom" target="_blank" rel="noopener noreferrer">
               <div class="thumb">
-                <img src="itens%20diversos%20II.png" alt="Itens diversos (2)" class="product-img">
+                <img src="itens%20diversos%20II.png" alt="Acessórios diversos para marmoristas" class="product-img" loading="lazy" decoding="async">
               </div>
             </a>
 
-            <a href="brocas.png" class="card zoom" target="_blank">
+            <a href="brocas.png" class="card zoom" target="_blank" rel="noopener noreferrer">
               <div class="thumb">
-                <img src="brocas.png" alt="Brocas" class="product-img">
+                <img src="brocas.png" alt="Brocas e fresas diamantadas Eternix" class="product-img" loading="lazy" decoding="async">
               </div>
             </a>
 
-            <a href="pratinho.png" class="card zoom" target="_blank">
+            <a href="pratinho.png" class="card zoom" target="_blank" rel="noopener noreferrer">
               <div class="thumb">
-                <img src="pratinho.png" alt="Pratinhos" class="product-img">
+                <img src="pratinho.png" alt="Pratinhos e suportes para polimento" class="product-img" loading="lazy" decoding="async">
               </div>
             </a>
           </div>
 
           <div class="grid-2" style="margin-top: 40px;">
             <div class="card">
-              <a href="discos-serra.png" target="_blank">
-                <img src="discos-serra.png" alt="Discos de Serra Eternix" class="product-img" />
+              <a href="discos-serra.png" target="_blank" rel="noopener noreferrer">
+                <img src="discos-serra.png" alt="Discos de serra Eternix para cortes precisos" class="product-img" loading="lazy" decoding="async" />
               </a>
               <p>Discos de Serra — desempenho superior para cortes precisos em diversos materiais.</p>
             </div>
 
             <div class="card">
-              <a href="discos-marmore.png" target="_blank">
-                <img src="discos-marmore.png" alt="Discos Mármore Eternix" class="product-img" />
+              <a href="discos-marmore.png" target="_blank" rel="noopener noreferrer">
+                <img src="discos-marmore.png" alt="Discos para mármore e granito Eternix" class="product-img" loading="lazy" decoding="async" />
               </a>
               <p>Discos de Mármore e Fresas Diamantadas — ideais para acabamentos de alta qualidade.</p>
             </div>
@@ -145,7 +197,7 @@
 
         <!-- Categoria: Colas e Selantes -->
         <div class="card">
-          <h3>Colas e Selantes</h3>
+          <h3>Colas e selantes</h3>
           <p>Adesivos de alta resistência para colagem e reparos em pedras.</p>
 
           <h3>Catálogo de Colas e Selantes</h3>
@@ -153,8 +205,8 @@
 
           <div class="grid-2">
             <div class="card">
-              <a href="cola-pu.png" target="_blank">
-                <img src="cola-pu.png" alt="Cola PU Eternix" class="product-img" />
+              <a href="cola-pu.png" target="_blank" rel="noopener noreferrer">
+                <img src="cola-pu.png" alt="Cola PU Eternix de alta aderência" class="product-img" loading="lazy" decoding="async" />
               </a>
               <p>Cola PU — alta aderência e resistência, ideal para colagem de pedras e superfícies.</p>
             </div>
@@ -170,21 +222,21 @@
           <p>Clique nas imagens para visualizar em tamanho completo:</p>
 
           <div class="grid-3 catalogo-abrasivos">
-            <a href="medicao.png" class="card zoom" target="_blank">
+            <a href="medicao.png" class="card zoom" target="_blank" rel="noopener noreferrer">
               <div class="thumb">
-                <img src="medicao.png" alt="Medição" class="product-img">
+                <img src="medicao.png" alt="Ferramentas de medição para marmoraria" class="product-img" loading="lazy" decoding="async">
               </div>
             </a>
 
-            <a href="pratinho.png" class="card zoom" target="_blank">
+            <a href="pratinho.png" class="card zoom" target="_blank" rel="noopener noreferrer">
               <div class="thumb">
-                <img src="pratinho.png" alt="Pratinhos" class="product-img">
+                <img src="pratinho.png" alt="Pratinhos e suportes" class="product-img" loading="lazy" decoding="async">
               </div>
             </a>
 
-            <a href="transporte%20de%20chapas.png" class="card zoom" target="_blank">
+            <a href="transporte%20de%20chapas.png" class="card zoom" target="_blank" rel="noopener noreferrer">
               <div class="thumb">
-                <img src="transporte%20de%20chapas.png" alt="Transporte de Chapas" class="product-img">
+                <img src="transporte%20de%20chapas.png" alt="Acessórios para transporte de chapas" class="product-img" loading="lazy" decoding="async">
               </div>
             </a>
           </div>
