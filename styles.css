@@ -229,3 +229,86 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
+/* =======================================================
+   ========== MELHORIAS / NOVOS ESTILOS (ACIMA +) =========
+   ======================================================= */
+
+/* Acessibilidade: respeita preferências de menos movimento */
+@media (prefers-reduced-motion: reduce){
+  * { animation: none !important; transition: none !important; }
+}
+
+/* Variáveis extras e utilitários */
+:root{
+  --bg-alt-2: #f7fbfa;
+  --ink-2: #334155;
+  --shadow-1: 0 4px 24px rgba(0,0,0,.05);
+  --shadow-2: 0 6px 20px rgba(0,0,0,.1);
+}
+
+/* Botões maiores/contrastantes e linha de CTAs */
+.btn-lg { padding: 14px 20px; border-radius: 999px; font-weight: 700; }
+.btn-sm { padding: 8px 12px; border-radius: 999px; font-weight: 600; }
+.btn-contrast { background: var(--tiffany); color:#fff; border:0; box-shadow: 0 8px 25px rgba(10,186,181,.35); }
+.btn-contrast:hover { filter: brightness(1.05); transform: translateY(-1px); }
+.btn-outline { border:2px solid var(--tiffany); color: var(--tiffany); background: transparent; }
+.btn-outline:hover { background: var(--tiffany); color:#fff; }
+.cta-row { display:flex; flex-wrap:wrap; gap:12px; margin-top:16px; }
+
+/* Links “fantasma” do hero (para social/email) */
+.link-ghost { color:#fff; opacity:.9; text-decoration:none; padding:4px 6px; }
+.link-ghost:hover { opacity:1; text-decoration:underline; }
+.dot { color:#fff; opacity:.6; margin: 0 6px; }
+
+/* Se quiser fundo alternado mais suave em alguma seção */
+.section.alt.alt2 { background: var(--bg-alt-2); }
+
+/* HERO com imagem de fundo + overlay (use .hero.hero-bg no HTML) */
+.hero-bg{
+  position: relative;
+  background-image: url('hero-eternix.png'); /* troque por foto “produto em uso” quando tiver */
+  background-size: cover;
+  background-position: center;
+  min-height: 70vh;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+.hero-overlay{
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,.45), rgba(0,0,0,.25));
+  pointer-events: none;
+}
+.hero-bg .hero-text{ color:#fff; }
+.brand-grad{
+  background: linear-gradient(90deg, #00d1b8, var(--tiffany));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Toque visual extra na imagem do hero */
+.hero-img { filter: drop-shadow(0 12px 32px rgba(0,0,0,.25)); }
+
+/* Cards com mini-thumb e microinteração de zoom */
+.thumb { position: relative; overflow: hidden; border-radius: 12px; }
+.thumb img { display:block; width:100%; height:auto; transition: transform .35s ease; }
+.card.zoom:hover .thumb img { transform: scale(1.035); }
+.thumb-cta {
+  position:absolute; right:10px; bottom:10px;
+  background: var(--tiffany); color:#fff; padding:6px 10px; border-radius:999px; font-size:.85rem;
+}
+
+/* Blocos com ícone (vantagens) */
+.icon { width:48px; height:48px; border-radius:12px; background:#e9fbf7; display:grid; place-items:center; margin-bottom:10px; }
+.icon svg { fill: var(--tiffany); }
+
+/* Texto de destaque */
+.lead { font-size: 1.05rem; color: #0e223b; }
+
+/* Responsividade extra para CTAs em telas pequenas */
+@media (max-width: 640px){
+  .btn-lg { width: 100%; text-align: center; }
+}
