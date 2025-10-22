@@ -8,13 +8,17 @@
   <title>Eternix | Tudo para sua marmoraria — qualidade, confiança e entrega rápida</title>
   <meta name="description" content="Insumos, abrasivos, colas e acessórios para marmorarias. Qualidade, durabilidade e entrega ágil em todo o Brasil. Fale com a Eternix e faça seu orçamento." />
   <link rel="canonical" href="https://eternix.com.br/" />
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
 
   <link rel="icon" href="assets/favicon.svg">
 
   <!-- Tipografia -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap">
+  </noscript>
 
   <!-- CSS -->
   <link rel="stylesheet" href="styles.css" />
@@ -109,11 +113,12 @@
           <a href="https://wa.me/5511941093427" class="link-ghost" target="_blank" rel="noopener noreferrer">WhatsApp</a>
         </div>
       </div>
+      <!-- Oculta no mobile via CSS para não poluir o hero -->
       <img src="hero-eternix.png" alt="Ferramentas e insumos Eternix" class="hero-img" loading="eager" fetchpriority="high" />
     </div>
   </section>
 
-  <!-- VANTAGENS (seção com ícones + fundo alternado) -->
+  <!-- VANTAGENS -->
   <section id="vantagens" class="section alt">
     <div class="container">
       <h2 class="reveal">Por que escolher a Eternix</h2>
@@ -121,7 +126,6 @@
       <div class="grid-3">
         <div class="card reveal">
           <div class="icon">
-            <!-- Caminhão (entrega) -->
             <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true"><path d="M3 6h11v7h2l3 3v2h-2a2 2 0 1 1-4 0H9a2 2 0 1 1-4 0H3V6zM6 19a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm10 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zM18 13h-2V9h2l2 2v2h-2z"/></svg>
           </div>
           <h3>Entrega rápida</h3>
@@ -130,7 +134,6 @@
 
         <div class="card reveal">
           <div class="icon">
-            <!-- Escudo (qualidade) -->
             <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true"><path d="M12 2l7 3v6c0 5-3.4 9.7-7 11-3.6-1.3-7-6-7-11V5l7-3z"/></svg>
           </div>
           <h3>Qualidade comprovada</h3>
@@ -139,7 +142,6 @@
 
         <div class="card reveal">
           <div class="icon">
-            <!-- Suporte (headset) -->
             <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true"><path d="M12 2a8 8 0 0 0-8 8v6a3 3 0 0 0 3 3h2v-6H7V10a5 5 0 1 1 10 0v3h-2v6h2a3 3 0 0 0 3-3v-6a8 8 0 0 0-8-8z"/></svg>
           </div>
           <h3>Atendimento especialista</h3>
@@ -155,7 +157,7 @@
       <h2 class="reveal">Principais produtos para marmoraria</h2>
 
       <div class="grid-3">
-        <!-- Categoria: Abrasivos -->
+        <!-- Abrasivos -->
         <div class="card reveal">
           <h3>Abrasivos</h3>
           <p>Discos, lixas e polidores de alta performance para mármore e granito.</p>
@@ -220,7 +222,7 @@
           </div>
         </div>
 
-        <!-- Categoria: Colas e Selantes -->
+        <!-- Colas -->
         <div class="card reveal">
           <h3>Colas e selantes</h3>
           <p>Adesivos de alta resistência para colagem e reparos em pedras.</p>
@@ -239,7 +241,7 @@
           </div>
         </div>
 
-        <!-- Categoria: Ferramentas -->
+        <!-- Ferramentas -->
         <div class="card reveal" id="ferramentas">
           <h3>Ferramentas</h3>
           <p>Equipamentos e acessórios que facilitam o dia a dia da marmoraria.</p>
@@ -306,32 +308,21 @@
     </div>
   </footer>
 
-  <!-- GSAP para animações suaves no scroll -->
+  <!-- GSAP -->
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollTrigger.min.js"></script>
   <script>
     document.getElementById('ano').textContent = new Date().getFullYear();
-
-    // Respeita preferências de movimento reduzido
     var prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
     if (!prefersReduced && window.gsap) {
       gsap.registerPlugin(ScrollTrigger);
-
       gsap.utils.toArray('.reveal').forEach(function(el){
         gsap.from(el, {
-          opacity: 0,
-          y: 30,
-          duration: 0.7,
-          ease: "power2.out",
-          scrollTrigger: {
-            trigger: el,
-            start: "top 85%"
-          }
+          opacity: 0, y: 30, duration: 0.7, ease: "power2.out",
+          scrollTrigger: { trigger: el, start: "top 85%" }
         });
       });
-
-      // Hero image sutil
       gsap.from('.hero-img', {opacity:0, y:20, duration:0.8, ease:"power2.out"});
     }
   </script>
