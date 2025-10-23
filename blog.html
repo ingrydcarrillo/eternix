@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog | Eternix</title>
+  <meta name="description" content="Conteúdos técnicos e dicas para marmoraria, colas e selantes.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="/" aria-label="Página inicial da Eternix">Eternix</a>
+      <nav class="nav" aria-label="Navegação principal">
+        <a href="/#produtos">Produtos</a>
+        <a href="/#vantagens">Vantagens</a>
+        <a href="/#sobre">Sobre</a>
+        <a href="blog.html" aria-current="page">Blog</a>
+        <a href="/#contato" class="btn btn-nav">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <h1>Blog</h1>
+
+      <div class="grid-2">
+        <a class="card zoom" href="diferenca-entre-silicone-e-pu.html">
+          <div class="thumb">
+            <img src="PU%20diferenca.png" alt="Diferença entre Silicone e PU — Eternix PU40" class="product-img" loading="lazy" decoding="async">
+          </div>
+          <div style="padding:16px">
+            <h3>Diferença entre Silicone e PU</h3>
+            <p>Onde usar cada selante e por que o PU40 Eternix é o foco para construção.</p>
+            <span class="thumb-cta">Ler artigo</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="ano"></span> Eternix — Todos os direitos reservados.</p>
+    </div>
+  </footer>
+  <script>document.getElementById('ano').textContent = new Date().getFullYear();</script>
+</body>
+</html>
