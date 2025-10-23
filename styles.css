@@ -146,3 +146,31 @@ footer{ padding:32px 0; text-align:center; border-top:1px solid #eee; background
 @media (prefers-reduced-motion: reduce){
   *{ animation:none !important; transition:none !important; }
 }
+/* ===== Ajustes iPhone: navegação e hero ===== */
+
+/* Camadas do hero: overlay não pode bloquear toques */
+.hero { position: relative; }
+.hero-overlay {
+  position: absolute; inset: 0;
+  z-index: 0;
+  pointer-events: none;            /* <— fundamental no iOS */
+}
+.hero-inner { position: relative; z-index: 1; }
+
+/* Cabeçalho sempre acima do conteúdo e sólido */
+.site-header {
+  position: sticky; top: 0;
+  z-index: 1000;
+  background: #ffffff;
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+}
+
+/* Rolagem suave padrão (iOS suporta) */
+html { scroll-behavior: smooth; }
+
+/* Evita que imagens do hero “estourem” por cima no mobile */
+.hero-img { display:block; max-width:100%; height:auto; }
+
+/* Toques confiáveis em botões/links no iOS */
+a, button { -webkit-tap-highlight-color: rgba(0,0,0,0.08); }
