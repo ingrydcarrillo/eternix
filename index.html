@@ -208,3 +208,145 @@
 
           <div class="grid-2" style="margin-top: 40px;">
             <div class="card">
+              <a href="discos-serra.png" target="_blank" rel="noopener noreferrer">
+                <img src="discos-serra.png" alt="Discos de serra Eternix para cortes precisos" class="product-img" loading="lazy" decoding="async" />
+              </a>
+              <p>Discos de Serra — desempenho superior para cortes precisos em diversos materiais.</p>
+              <a class="btn btn-sm btn-outline" href="discos-serra.html">Saiba mais</a>
+            </div>
+
+            <div class="card">
+              <a href="discos-marmore.png" target="_blank" rel="noopener noreferrer">
+                <img src="discos-marmore.png" alt="Discos para mármore e granito Eternix" class="product-img" loading="lazy" decoding="async" />
+              </a>
+              <p>Discos de Mármore e Fresas Diamantadas — ideais para acabamentos de alta qualidade.</p>
+              <a class="btn btn-sm btn-outline" href="discos-marmore.html">Saiba mais</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Colas -->
+        <div class="card reveal">
+          <h3>Colas e selantes</h3>
+          <p>Adesivos de alta resistência para colagem e reparos em pedras.</p>
+
+          <h3>Catálogo de Colas e Selantes</h3>
+          <p>Clique na imagem para visualizar em tamanho completo:</p>
+
+          <div class="grid-2">
+            <div class="card">
+              <a href="cola-pu40.html">
+                <img src="cola-pu.png" alt="Cola PU40 Eternix de alta aderência" class="product-img" loading="lazy" decoding="async" />
+              </a>
+              <p>Cola PU — alta aderência e resistência, ideal para colagem de pedras e superfícies.</p>
+              <a class="btn btn-sm btn-outline" href="cola-pu40.html">Ver detalhes</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ferramentas -->
+        <div class="card reveal" id="ferramentas">
+          <h3>Ferramentas</h3>
+          <p>Equipamentos e acessórios que facilitam o dia a dia da marmoraria.</p>
+
+          <h3>Catálogo de Ferramentas</h3>
+          <p>Clique nas imagens para visualizar em tamanho completo:</p>
+
+          <div class="grid-3 catalogo-abrasivos">
+            <a href="medicao.html" class="card zoom">
+              <div class="thumb">
+                <img src="medicao.png" alt="Ferramentas de medição para marmoraria" class="product-img" loading="lazy" decoding="async">
+              </div>
+              <span class="thumb-cta">Ver detalhes</span>
+            </a>
+
+            <a href="pratinho.png" class="card zoom" target="_blank" rel="noopener noreferrer">
+              <div class="thumb">
+                <img src="pratinho.png" alt="Pratinhos e suportes" class="product-img" loading="lazy" decoding="async">
+              </div>
+            </a>
+
+            <a href="transporte-de-chapas.html" class="card zoom">
+              <div class="thumb">
+                <img src="transporte%20de%20chapas.png" alt="Acessórios para transporte de chapas" class="product-img" loading="lazy" decoding="async">
+              </div>
+              <span class="thumb-cta">Ver detalhes</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section id="sobre" class="section alt">
+    <div class="container">
+      <h2 class="reveal">Sobre a Eternix</h2>
+      <p>A Eternix é especializada em insumos para marmorarias, oferecendo produtos de qualidade e suporte técnico confiável.</p>
+      <ul class="reveal">
+        <li>Atendimento ágil e personalizado</li>
+        <li>Entrega rápida em todo o Brasil</li>
+        <li>Parcerias com as melhores marcas do setor</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- BLOG (destaque na home) -->
+  <section id="blog" class="section">
+    <div class="container">
+      <h2 class="reveal">Blog</h2>
+      <div class="grid-2">
+        <a class="card zoom" href="diferenca-entre-silicone-e-pu.html">
+          <div class="thumb">
+            <!-- usa a imagem que você já adicionou -->
+            <img src="PU%20diferenca.png" alt="Diferença entre Silicone e PU — Eternix PU40" class="product-img" loading="lazy" decoding="async">
+          </div>
+          <div style="padding:16px">
+            <h3>Diferença entre Silicone e PU</h3>
+            <p>Entenda quando usar cada selante e por que o PU40 Eternix é o destaque na construção.</p>
+            <span class="thumb-cta">Ler artigo</span>
+          </div>
+        </a>
+      </div>
+      <p style="margin-top:16px"><a class="link-ghost" href="blog.html">Ver todos os artigos do blog</a></p>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato" class="section">
+    <div class="container">
+      <h2 class="reveal">Contato</h2>
+      <p>Entre em contato e solicite seu orçamento:</p>
+      <div class="cta-row">
+        <a class="btn btn-lg btn-contrast" href="mailto:importadorask2025@gmail.com">importadorask2025@gmail.com</a>
+        <a class="btn btn-lg btn-outline" href="https://wa.me/5511941093427?text=Olá!%20Quero%20um%20orçamento%20Eternix."
+           target="_blank" rel="noopener noreferrer">WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="ano"></span> Eternix — Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- GSAP -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollTrigger.min.js"></script>
+  <script>
+    document.getElementById('ano').textContent = new Date().getFullYear();
+    if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches && window.gsap) {
+      gsap.registerPlugin(ScrollTrigger);
+      gsap.utils.toArray('.reveal').forEach(function(el){
+        gsap.from(el, {
+          opacity: 0, y: 30, duration: 0.7, ease: "power2.out",
+          scrollTrigger: { trigger: el, start: "top 85%" }
+        });
+      });
+      gsap.from('.hero-img', {opacity:0, y:20, duration:0.8, ease:"power2.out"});
+    }
+  </script>
+</body>
+</html>
