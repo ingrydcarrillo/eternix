@@ -3,54 +3,71 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Blog da Eternix — Dicas e informações sobre produtos e aplicações para construção e marmoraria.">
   <title>Blog | Eternix</title>
+  <meta name="description" content="Dicas técnicas, comparativos e conteúdos para marmoristas e distribuidores: colas, selantes, abrasivos, segurança e produtividade.">
   <link rel="stylesheet" href="styles.css">
-  <style>
-    body {font-family: 'Inter', sans-serif; margin: 0; background: #fff; color: #222; line-height: 1.6;}
-    .container {max-width: 1000px; margin: 40px auto; padding: 0 20px;}
-    h1 {color: #007C89; text-align: center;}
-    .posts {display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 40px;}
-    .card {border: 1px solid #eee; border-radius: 10px; overflow: hidden; transition: all .3s;}
-    .card:hover {box-shadow: 0 4px 14px rgba(0,0,0,0.1);}
-    .card img {width: 100%; height: auto;}
-    .card-content {padding: 20px;}
-    .card h2 {color: #F47A20; margin: 0 0 10px;}
-    .card p {margin-bottom: 15px;}
-    .btn {display: inline-block; background: #007C89; color: #fff; padding: 10px 18px; border-radius: 6px; text-decoration: none;}
-    .btn:hover {background: #F47A20;}
-  </style>
-</head>
 
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Blog | Eternix">
+  <meta property="og:description" content="Conteúdos técnicos e comparativos sobre insumos para marmoraria.">
+  <meta property="og:image" content="https://eternix.com.br/hero-eternix.png">
+  <meta property="og:url" content="https://eternix.com.br/blog.html">
+</head>
 <body>
-  <header style="background:#f9f9f9; padding:20px 0;">
+  <!-- HEADER -->
+  <header class="site-header">
     <div class="container">
-      <a href="/" style="text-decoration:none; color:#007C89; font-weight:700; font-size:22px;">Eternix</a>
+      <a class="logo" href="/" aria-label="Página inicial da Eternix">Eternix</a>
+      <nav class="nav" aria-label="Navegação principal">
+        <a href="/#produtos">Produtos</a>
+        <a href="/#vantagens">Vantagens</a>
+        <a href="/#sobre">Sobre</a>
+        <a href="/blog.html" aria-current="page">Blog</a>
+        <a href="/#contato" class="btn btn-nav">Contato</a>
+      </nav>
     </div>
   </header>
 
-  <main class="container">
-    <h1>Blog Eternix</h1>
-    <p style="text-align:center;">Dicas técnicas, comparativos e conteúdos sobre colas, selantes e insumos profissionais.</p>
+  <main class="section">
+    <div class="container">
+      <h1 style="text-align:center;color:#007C89;margin-bottom:6px;">Blog Eternix</h1>
+      <p style="text-align:center;color:#334155;">Dicas técnicas, comparativos e conteúdos sobre colas, selantes e insumos profissionais.</p>
 
-    <div class="posts">
-      <div class="card">
-        <img src="/PU%20diferenca.png" alt="Diferença entre Silicone e PU — Eternix PU40">
-        <div class="card-content">
-          <h2>Diferença entre Silicone e PU</h2>
-          <p>Entenda quando usar silicone e quando usar PU na construção. Descubra por que o PU40 Eternix é o selante ideal para obras civis.</p>
-          <a href="/diferenca-entre-silicone-e-pu.html" class="btn">Ler artigo completo</a>
-        </div>
+      <!-- GRADE DE POSTS -->
+      <div class="grid-2" style="margin-top:28px;">
+        <!-- Post 1: Diferença entre Silicone e PU (já existente) -->
+        <a class="card zoom" href="/diferenca-entre-silicone-e-pu.html">
+          <div class="thumb">
+            <img src="/PU%20diferenca.png" alt="Diferença entre Silicone e PU — Eternix PU40" class="product-img" loading="lazy" decoding="async">
+          </div>
+          <div style="padding:16px">
+            <h3>Diferença entre Silicone e PU</h3>
+            <p>Quando usar cada selante e por que o PU40 Eternix é destaque em obras civis e juntas de concreto.</p>
+            <span class="thumb-cta">Ler artigo</span>
+          </div>
+        </a>
+
+        <!-- Post 2: Como armazenar corretamente colas e selantes (NOVO) -->
+        <a class="card zoom" href="/como-armazenar-colas-e-selantes.html">
+          <div class="thumb">
+            <img src="/armazenamento%20PU.jpeg" alt="Como armazenar corretamente colas e selantes na marmoraria" class="product-img" loading="lazy" decoding="async">
+          </div>
+          <div style="padding:16px">
+            <h3>Como armazenar corretamente colas e selantes na marmoraria</h3>
+            <p>Boas práticas que preservam aderência e garantem cura uniforme — com destaque para o PU40 Eternix.</p>
+            <span class="thumb-cta">Ler artigo</span>
+          </div>
+        </a>
       </div>
     </div>
   </main>
 
-  <footer style="text-align:center; padding:20px; background:#f9f9f9; margin-top:40px;">
-    © <span id="ano"></span> Eternix — Todos os direitos reservados.
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="ano"></span> Eternix — Todos os direitos reservados.</p>
+    </div>
   </footer>
-
-  <script>
-    document.getElementById('ano').textContent = new Date().getFullYear();
-  </script>
+  <script>document.getElementById('ano').textContent = new Date().getFullYear();</script>
 </body>
 </html>
