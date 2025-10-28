@@ -3,17 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blog Eternix | Dicas e Conteúdos Técnicos para Marmorarias</title>
-  <meta name="description" content="Dicas técnicas, comparativos e orientações sobre colas, selantes, abrasivos e insumos profissionais para marmorarias.">
+  <title>Blog Eternix | Dicas e Conteúdos para Marmorarias</title>
+  <meta name="description" content="Dicas técnicas, comparativos e orientações sobre colas, selantes, abrasivos e insumos para marmorarias. A Eternix ajuda você a alcançar os melhores resultados.">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css">
 
   <style>
     body {
       font-family: 'Inter', sans-serif;
-      margin: 0;
-      background: #fafafa;
+      background: #f9fafa;
       color: #0b1324;
+      margin: 0;
       -webkit-text-size-adjust: 100%;
     }
 
@@ -21,14 +20,30 @@
       background: #ffffff;
       border-bottom: 1px solid #eee;
       padding: 16px 24px;
-      text-align: left;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
 
-    header a {
+    header a.logo {
+      font-weight: 800;
       color: #0a918c;
       text-decoration: none;
-      font-weight: 700;
       font-size: 20px;
+    }
+
+    header a.voltar {
+      text-decoration: none;
+      background: #0a918c;
+      color: #fff;
+      padding: 8px 14px;
+      border-radius: 999px;
+      font-weight: 600;
+      transition: 0.2s ease;
+    }
+
+    header a.voltar:hover {
+      filter: brightness(1.1);
     }
 
     main {
@@ -40,69 +55,90 @@
     h1 {
       text-align: center;
       color: #0a918c;
+      font-size: 30px;
       margin-bottom: 8px;
     }
 
-    p.intro {
+    p.subtitle {
       text-align: center;
       color: #555;
-      margin-bottom: 48px;
+      margin-bottom: 50px;
     }
 
-    .blog-card {
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 32px;
+    }
+
+    .card {
       background: #fff;
-      border-radius: 14px;
-      box-shadow: 0 4px 18px rgba(0,0,0,0.06);
+      border: 1px solid #eee;
+      border-radius: 16px;
+      box-shadow: 0 4px 14px rgba(0,0,0,.05);
       overflow: hidden;
-      margin-bottom: 48px;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
     }
 
-    .blog-card:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 22px rgba(0,0,0,.08);
     }
 
-    .blog-thumb {
+    .card img {
       width: 100%;
-      height: auto;
-      display: block;
-      max-height: 460px;
+      height: 240px;
       object-fit: cover;
     }
 
-    .blog-content {
-      padding: 24px 28px;
+    .card-content {
+      padding: 20px;
     }
 
-    .blog-content h2 {
+    .card h2 {
       color: #0a918c;
-      margin-bottom: 12px;
+      font-size: 20px;
+      margin: 0 0 10px;
     }
 
-    .blog-content p {
-      margin: 8px 0;
+    .card p {
+      color: #444;
+      font-size: 15px;
       line-height: 1.6;
-      color: #333;
+      margin-bottom: 18px;
     }
 
-    .blog-content ul {
-      padding-left: 24px;
-      margin-top: 12px;
+    .btn {
+      display: inline-block;
+      padding: 10px 18px;
+      background: #0a918c;
+      color: #fff;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.2s ease;
+    }
+
+    .btn:hover {
+      filter: brightness(1.1);
     }
 
     footer {
       text-align: center;
-      padding: 24px;
+      padding: 30px;
       color: #777;
-      border-top: 1px solid #eee;
       background: #fff;
+      border-top: 1px solid #eee;
       font-size: 0.9rem;
+      margin-top: 60px;
     }
 
     @media (max-width: 640px) {
-      .blog-content {
-        padding: 18px;
+      h1 {
+        font-size: 24px;
+      }
+      .card img {
+        height: 200px;
       }
     }
   </style>
@@ -110,63 +146,45 @@
 
 <body>
   <header>
-    <a href="index.html">Eternix</a>
+    <a href="index.html" class="logo">Eternix</a>
+    <a href="/" class="voltar">← Voltar ao Site</a>
   </header>
 
   <main>
     <h1>Blog Eternix</h1>
-    <p class="intro">Dicas técnicas, comparativos e conteúdos sobre colas, selantes, abrasivos e insumos profissionais.</p>
+    <p class="subtitle">Dicas técnicas, comparativos e conteúdos sobre colas, selantes e insumos profissionais.</p>
 
-    <!-- === POST 1: Diferença entre Silicone e PU === -->
-    <article class="blog-card">
-      <img src="diferenca-silicone-pu.png" alt="Diferença entre Silicone e PU" class="blog-thumb" loading="lazy">
-      <div class="blog-content">
-        <h2>Diferença entre Silicone e PU</h2>
-        <p class="blog-resumo"><strong>Entenda qual é o mais indicado para cada tipo de aplicação</strong></p>
-        <p>Embora ambos sejam selantes usados em marmorarias, o <strong>Silicone</strong> e o <strong>PU (Poliuretano)</strong> possuem composições e comportamentos diferentes.</p>
-        <ul>
-          <li><strong>Silicone:</strong> Selante à base de silicone, ideal para áreas úmidas e aplicações com flexibilidade.</li>
-          <li><strong>PU:</strong> Selante à base de poliuretano, indicado para colagens estruturais e superfícies que exigem alta resistência.</li>
-        </ul>
-        <p>O <strong>PU40 Eternix Construção</strong> oferece desempenho superior, com excelente aderência e durabilidade, sendo uma escolha confiável para profissionais exigentes.</p>
+    <div class="grid">
+      <!-- Post 1 -->
+      <div class="card">
+        <img src="PU diferenca.png" alt="Diferença entre Silicone e PU">
+        <div class="card-content">
+          <h2>Diferença entre Silicone e PU</h2>
+          <p>Entenda qual selante usar em cada aplicação e descubra as vantagens de desempenho do PU40 Eternix Construção.</p>
+          <a href="diferenca-entre-silicone-e-pu.html" class="btn">Ler mais</a>
+        </div>
       </div>
-    </article>
 
-    <!-- === POST 2: Armazenamento Correto de Colas e Selantes === -->
-    <article class="blog-card">
-      <img src="armazenamento PU.jpeg" alt="Armazenamento correto de colas e selantes" class="blog-thumb" loading="lazy">
-      <div class="blog-content">
-        <h2>Armazenamento Correto de Colas e Selantes</h2>
-        <p class="blog-resumo"><strong>Como armazenar corretamente colas e selantes na marmoraria</strong></p>
-        <p>O desempenho das colas e selantes depende diretamente do armazenamento correto. Siga estas orientações:</p>
-        <ul>
-          <li>Guarde em local seco, ventilado e protegido do sol.</li>
-          <li>Evite temperaturas extremas (muito frio ou calor).</li>
-          <li>Mantenha sempre as embalagens fechadas e na posição vertical.</li>
-          <li>Verifique o prazo de validade antes de aplicar.</li>
-        </ul>
-        <p>Essas boas práticas garantem aderência máxima e cura uniforme — especialmente para produtos de alta performance como o <strong>PU40 Eternix Construção</strong>.</p>
+      <!-- Post 2 -->
+      <div class="card">
+        <img src="armazenamento PU.jpeg" alt="Armazenamento correto de colas e selantes">
+        <div class="card-content">
+          <h2>Como armazenar corretamente colas e selantes</h2>
+          <p>Descubra como conservar o desempenho máximo das colas e selantes Eternix com armazenamento adequado.</p>
+          <a href="armazenamento.html" class="btn">Ler mais</a>
+        </div>
       </div>
-    </article>
 
-    <!-- === POST 3: Tipos de Abrasivos e Suas Aplicações === -->
-    <article class="blog-card">
-      <img src="lixas apropriadas.png.jpeg" alt="Tipos de abrasivos e suas aplicações" class="blog-thumb" loading="lazy">
-      <div class="blog-content">
-        <h2>Tipos de Abrasivos e Suas Aplicações</h2>
-        <p class="blog-resumo"><strong>Como escolher o abrasivo certo para cada tipo de pedra</strong></p>
-        <p>Nem todo abrasivo serve para qualquer superfície. Mármore, granito e quartzito possuem durezas diferentes e exigem abrasivos específicos.</p>
-        <p>A linha de abrasivos <strong>Eternix</strong> foi desenvolvida para garantir performance, brilho e segurança em cada tipo de material.</p>
-        <ul>
-          <li><strong>Mármore:</strong> requer abrasivos mais macios para evitar riscos e manter o polimento uniforme.</li>
-          <li><strong>Granito:</strong> necessita de abrasivos de maior dureza e resistência para atingir o brilho ideal.</li>
-          <li><strong>Quartzito:</strong> combina dureza alta e estrutura delicada, exigindo abrasivos de precisão e controle.</li>
-        </ul>
-        <p>Seguir as recomendações de uso e substituição dos abrasivos evita desperdício e melhora o acabamento final das peças.</p>
-        <p><em>Com os abrasivos Eternix, cada etapa do polimento é mais eficiente, segura e duradoura.</em></p>
+      <!-- Post 3 -->
+      <div class="card">
+        <img src="lixas apropriadas.png.jpeg" alt="Tipos de abrasivos e suas aplicações">
+        <div class="card-content">
+          <h2>Como escolher o abrasivo certo para cada tipo de pedra</h2>
+          <p>Nem todo abrasivo serve para qualquer superfície. Veja como escolher o ideal para mármore, granito e quartzito.</p>
+          <a href="abrasivos-certos.html" class="btn">Ler mais</a>
+        </div>
       </div>
-    </article>
-
+    </div>
   </main>
 
   <footer>
