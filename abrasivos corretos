@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Como escolher o abrasivo certo | Blog Eternix</title>
+  <meta name="description" content="Saiba como escolher o abrasivo ideal para cada tipo de pedra — mármore, granito e quartzito — e garanta melhor acabamento com os abrasivos Eternix.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #fafafa;
+      color: #0b1324;
+      margin: 0;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    header {
+      background: #ffffff;
+      border-bottom: 1px solid #eee;
+      padding: 16px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header a.logo {
+      font-weight: 800;
+      color: #0a918c;
+      text-decoration: none;
+      font-size: 20px;
+    }
+
+    header a.voltar {
+      text-decoration: none;
+      background: #0a918c;
+      color: #fff;
+      padding: 8px 14px;
+      border-radius: 999px;
+      font-weight: 600;
+      transition: 0.2s ease;
+    }
+    header a.voltar:hover {
+      filter: brightness(1.1);
+    }
+
+    main {
+      max-width: 960px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #0a918c;
+      font-size: 28px;
+      margin-bottom: 8px;
+    }
+
+    p.subtitle {
+      text-align: center;
+      color: #555;
+      margin-bottom: 40px;
+    }
+
+    .post-image {
+      display: block;
+      width: 100%;
+      max-width: 640px;
+      margin: 0 auto 32px;
+      border-radius: 12px;
+      box-shadow: 0 6px 22px rgba(0,0,0,0.08);
+    }
+
+    .content p {
+      line-height: 1.7;
+      margin: 16px 0;
+    }
+
+    .content ul {
+      padding-left: 24px;
+      margin: 16px 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 24px;
+      color: #777;
+      border-top: 1px solid #eee;
+      background: #fff;
+      font-size: 0.9rem;
+      margin-top: 60px;
+    }
+
+    @media (max-width: 640px) {
+      header {
+        flex-direction: column;
+        gap: 8px;
+      }
+      h1 {
+        font-size: 24px;
+      }
+      .post-image {
+        max-width: 90%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <a href="index.html" class="logo">Eternix</a>
+    <a href="blog.html" class="voltar">← Voltar ao Blog</a>
+  </header>
+
+  <main>
+    <h1>Como escolher o abrasivo certo para cada tipo de pedra</h1>
+    <p class="subtitle">Dicas para marmoristas escolherem o abrasivo ideal com desempenho e brilho profissional</p>
+
+    <img src="lixas apropriadas.png.jpeg" alt="Tipos de abrasivos e suas aplicações" class="post-image" loading="lazy">
+
+    <div class="content">
+      <p>Nem todo abrasivo serve para qualquer superfície. Mármore, granito e quartzito possuem durezas diferentes e exigem abrasivos específicos — e essa escolha impacta diretamente o brilho, a durabilidade e a segurança no acabamento.</p>
+
+      <p>A linha de <strong>abrasivos Eternix</strong> foi desenvolvida para oferecer <strong>performance, brilho e segurança</strong> em cada tipo de material, garantindo resultados consistentes e duradouros.</p>
+
+      <ul>
+        <li><strong>Mármore:</strong> requer abrasivos mais macios, evitando riscos e mantendo o polimento uniforme.</li>
+        <li><strong>Granito:</strong> precisa de abrasivos de maior dureza e resistência para alcançar brilho intenso.</li>
+        <li><strong>Quartzito:</strong> combina alta dureza e delicadeza, pedindo abrasivos de precisão e controle.</li>
+      </ul>
+
+      <p>Usar o abrasivo correto evita desgastes prematuros e desperdício, além de realçar a beleza natural das pedras. Cada detalhe faz diferença — e escolher o produto certo é o que define um acabamento profissional.</p>
+
+      <p><em>Com os abrasivos Eternix, cada etapa do polimento é mais eficiente, segura e duradoura.</em></p>
+    </div>
+  </main>
+
+  <footer>
+    © <script>document.write(new Date().getFullYear())</script> Eternix — Todos os direitos reservados.
+  </footer>
+</body>
+</html>
