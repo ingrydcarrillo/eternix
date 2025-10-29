@@ -1,0 +1,23 @@
+User-agent: *
+Allow: /
+
+# Bloquear páginas internas sem conteúdo relevante para SEO
+Disallow: /admin/
+Disallow: /assets/
+Disallow: /images/
+Disallow: /scripts/
+Disallow: /styles/
+
+# Sitemap principal do site
+Sitemap: https://eternix.com.br/sitemap.xml
+
+# Instruções adicionais para o Googlebot
+User-agent: Googlebot
+Allow: /
+
+# Instruções adicionais para outros robôs (Bing, etc.)
+User-agent: Bingbot
+Allow: /
+
+# Política de rastreamento (opcional)
+Crawl-delay: 5
