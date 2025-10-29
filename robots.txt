@@ -19,5 +19,4 @@ Allow: /
 User-agent: Bingbot
 Allow: /
 
-# Política de rastreamento (opcional)
-Crawl-delay: 5
+# Política de rastreamento (removido o Crawl-delay porque o Google ignora)
