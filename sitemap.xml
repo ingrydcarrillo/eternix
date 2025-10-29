@@ -1,52 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- Página inicial -->
+  <!-- Home -->
   <url>
     <loc>https://eternix.com.br/</loc>
+    <lastmod>2025-10-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
-  <!-- Páginas de produtos -->
+  <!-- Blog (lista) -->
   <url>
-    <loc>https://eternix.com.br/cola-pu40.html</loc>
+    <loc>https://eternix.com.br/blog.html</loc>
+    <lastmod>2025-10-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Posts do Blog -->
+  <url>
+    <loc>https://eternix.com.br/diferenca-entre-silicone-e-pu.html</loc>
+    <lastmod>2025-10-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://eternix.com.br/como-armazenar-colas-e-selantes.html</loc>
+    <lastmod>2025-10-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://eternix.com.br/abrasivos-certos.html</loc>
+    <lastmod>2025-10-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
+  <!-- Páginas de Produtos / Serviços -->
+  <url>
+    <loc>https://eternix.com.br/cola-pu40.html</loc>
+    <lastmod>2025-10-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
   <url>
     <loc>https://eternix.com.br/discos-serra.html</loc>
+    <lastmod>2025-10-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://eternix.com.br/discos-marmore.html</loc>
+    <lastmod>2025-10-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://eternix.com.br/escovas.html</loc>
+    <lastmod>2025-10-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://eternix.com.br/medicao.html</loc>
+    <lastmod>2025-10-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-
   <url>
     <loc>https://eternix.com.br/transporte-de-chapas.html</loc>
+    <lastmod>2025-10-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
-  <!-- Página de contato (âncora para reforçar rastreamento) -->
+  <!-- Âncora de contato (opcional para reforçar rastreamento da home) -->
   <url>
     <loc>https://eternix.com.br/#contato</loc>
+    <lastmod>2025-10-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
