@@ -10,23 +10,22 @@
   <meta property="og:description" content="Dicas técnicas, comparativos e conteúdos sobre colas, selantes e insumos profissionais." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://eternix.com.br/blog.html" />
-  <link rel="icon" href="favicon.ico" />
+  <link rel="icon" href="assets/favicon.svg" />
   <style>
-    body{font-family:'Poppins',sans-serif;background:#f8f9fa;margin:0;color:#333}
+    body{font-family:'Poppins',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:#f8f9fa;margin:0;color:#333}
     header{padding:1.5rem 2rem;background:#fff;border-bottom:1px solid #e5e5e5}
     header a{text-decoration:none;font-weight:700;font-size:1.2rem;color:#007272}
     h1{text-align:center;color:#007272;margin-top:2rem}
     p.subtitle{text-align:center;color:#555;margin-bottom:3rem}
     .posts{display:flex;flex-wrap:wrap;justify-content:center;gap:2rem;padding:0 1rem 3rem}
-    .post{background:#fff;border-radius:12px;box-shadow:0 3px 12px rgba(0,0,0,.08);width:320px;transition:.3s}
+    .post{background:#fff;border-radius:12px;box-shadow:0 3px 12px rgba(0,0,0,.08);width:320px;transition:.3s;display:flex;flex-direction:column}
     .post:hover{transform:translateY(-5px)}
     .post img{width:100%;height:220px;object-fit:cover;border-radius:12px 12px 0 0}
-    .post-content{padding:1rem 1.5rem}
-    .post-content h2{font-size:1.1rem;color:#007272;margin-bottom:.5rem}
-    .post-content p{font-size:.95rem;color:#555;margin-bottom:1rem;min-height:60px}
-    .read-more{background:#007272;color:#fff;text-decoration:none;padding:.7rem 1.2rem;border-radius:6px;font-weight:600;display:inline-block;transition:.3s}
-    .read-more:hover{background:#005e5e}
-    .back-btn{display:inline-block;background:#007272;color:#fff;text-decoration:none;padding:.8rem 1.5rem;border-radius:6px;margin:2rem auto;display:block;text-align:center;width:fit-content;transition:.3s}
+    .post-content{padding:1rem 1.5rem;display:flex;flex-direction:column;gap:.6rem}
+    .post-content h2{font-size:1.1rem;color:#007272;margin:0}
+    .post-content p{font-size:.95rem;color:#555;min-height:60px;margin:0}
+    .read-more{background:#007272;color:#fff;text-decoration:none;padding:.7rem 1.2rem;border-radius:6px;font-weight:600;width:max-content}
+    .back-btn{display:inline-block;background:#007272;color:#fff;text-decoration:none;padding:.8rem 1.5rem;border-radius:6px;margin:2rem auto;display:block;text-align:center;width:fit-content}
     footer{text-align:center;padding:2rem 1rem;color:#555;font-size:.9rem;border-top:1px solid #e5e5e5}
     @media (max-width:768px){.posts{flex-direction:column;align-items:center}.post{width:90%}}
   </style>
@@ -39,13 +38,14 @@
     <p class="subtitle">Dicas técnicas, comparativos e conteúdos sobre colas, selantes e insumos profissionais.</p>
 
     <div class="posts">
-      <!-- NOVO post (aparece primeiro) -->
+
+      <!-- NOVO POST -->
       <div class="post">
-        <img src="pu%20x%20silicone.png" alt="PU Eternix vs Silicone">
+        <img src="pu%20eternix%20novidade.png" alt="PU Eternix é uma novidade e já se destaca no mercado">
         <div class="post-content">
-          <h2>Por que o PU substitui o silicone em muitas obras</h2>
-          <p>Durabilidade, resistência mecânica e acabamento impecável: entenda por que o PU Eternix vem tomando o lugar do silicone.</p>
-          <a href="pu-substitui-silicone.html" class="read-more">Ler mais</a>
+          <h2>PU Eternix é uma novidade e já se destaca no mercado</h2>
+          <p>Mais ancoragem e resistência, secagem mais rápida e acabamento de alto nível.</p>
+          <a href="pu-eternix-novidade.html" class="read-more">Ler mais</a>
         </div>
       </div>
 
@@ -56,6 +56,16 @@
           <h2>Por que a Eternix é referência em insumos para marmorarias</h2>
           <p>Escolha que une confiança, qualidade e suporte técnico especializado para resultados de alto nível.</p>
           <a href="por-que-eternix.html" class="read-more">Ler mais</a>
+        </div>
+      </div>
+
+      <!-- Post: PU x Silicone -->
+      <div class="post">
+        <img src="pu%20x%20silicone.png" alt="Por que o PU substitui o silicone em muitas obras">
+        <div class="post-content">
+          <h2>Por que o PU substitui o silicone em muitas obras</h2>
+          <p>Durabilidade, resistência mecânica e flexibilidade com acabamento superior.</p>
+          <a href="pu-substitui-silicone.html" class="read-more">Ler mais</a>
         </div>
       </div>
 
@@ -74,7 +84,7 @@
         <img src="armazenamento%20PU.jpeg" alt="Como armazenar corretamente colas e selantes">
         <div class="post-content">
           <h2>Como armazenar corretamente colas e selantes</h2>
-        <p>Boas práticas para preservar aderência e cura uniforme — com destaque para o PU40 Eternix.</p>
+          <p>Boas práticas para preservar aderência e cura uniforme — com destaque para o PU40 Eternix.</p>
           <a href="como-armazenar-colas-e-selantes.html" class="read-more">Ler mais</a>
         </div>
       </div>
@@ -88,6 +98,7 @@
           <a href="abrasivos-certos.html" class="read-more">Ler mais</a>
         </div>
       </div>
+
     </div>
 
     <a href="index.html" class="back-btn">← Voltar ao Site</a>
