@@ -28,23 +28,70 @@
   </url>
 
   <!-- Páginas de produtos -->
-  <url><loc>https://eternix.com.br/cola-pu40.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://eternix.com.br/discos-serra.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://eternix.com.br/discos-marmore.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://eternix.com.br/escovas.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://eternix.com.br/medicao.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://eternix.com.br/transporte-de-chapas.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url>
+    <loc>https://eternix.com.br/cola-pu40.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://eternix.com.br/discos-serra.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://eternix.com.br/discos-marmore.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://eternix.com.br/escovas.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://eternix.com.br/medicao.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://eternix.com.br/transporte-de-chapas.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 
-  <!-- Páginas do blog -->
+  <!-- Blog -->
   <url>
     <loc>https://eternix.com.br/blog.html</loc>
     <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Páginas de posts -->
+  <url>
+    <loc>https://eternix.com.br/por-que-eternix.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://eternix.com.br/diferenca-entre-silicone-e-pu.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://eternix.com.br/como-armazenar-colas-e-selantes.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://eternix.com.br/abrasivos-certos.html</loc>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
+  <!-- ✅ Novo post -->
   <url>
-    <loc>https://eternix.com.br/blog/tipos-de-abrasivos.html</loc>
-    <changefreq>weekly</changefreq>
+    <loc>https://eternix.com.br/pu-substitui-silicone.html</loc>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
