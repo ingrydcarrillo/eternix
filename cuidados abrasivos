@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>5 erros que prejudicam o polimento de pedras | Blog Eternix</title>
+  <meta name="description" content="Evite erros no polimento de pedras! Veja os 5 principais equívocos e como melhorar o acabamento com abrasivos Eternix." />
+  <meta name="author" content="Eternix" />
+  <meta property="og:title" content="5 erros que prejudicam o polimento de pedras" />
+  <meta property="og:description" content="Saiba como evitar falhas que comprometem o brilho e a uniformidade no polimento. Dicas práticas com abrasivos Eternix." />
+  <meta property="og:image" content="uso certo abrasivo.png" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://eternix.com.br/erros-polimento-pedras.html" />
+  <link rel="icon" href="favicon.ico" />
+  <style>
+    body{font-family:'Poppins',sans-serif;background:#f8f9fa;margin:0;color:#333;line-height:1.6}
+    header{padding:1.5rem 2rem;background:#fff;border-bottom:1px solid #e5e5e5}
+    header a{text-decoration:none;font-weight:700;font-size:1.2rem;color:#007272}
+    .container{max-width:850px;margin:2rem auto;padding:0 1.5rem}
+    h1{color:#007272;margin-top:1rem;text-align:center}
+    h2{color:#007272;margin-top:2rem}
+    img{display:block;margin:2rem auto;border-radius:12px;max-width:100%;height:auto}
+    p{margin-bottom:1.2rem}
+    ul{margin:1rem 0 2rem 1.2rem}
+    li{margin-bottom:.6rem}
+    .cta{background:#007272;color:#fff;text-decoration:none;padding:.8rem 1.5rem;border-radius:8px;display:inline-block;margin-top:2rem;transition:.3s}
+    .cta:hover{background:#005e5e}
+    footer{text-align:center;padding:2rem 1rem;color:#555;font-size:.9rem;border-top:1px solid #e5e5e5;margin-top:3rem}
+  </style>
+</head>
+<body>
+  <header><a href="blog.html">← Voltar ao Blog</a></header>
+
+  <main class="container">
+    <h1>5 erros que prejudicam o polimento de pedras</h1>
+    <img src="uso certo abrasivo.png" alt="Erros comuns no polimento de pedras" />
+
+    <p>Mesmo profissionais experientes podem cometer falhas que comprometem o brilho e a uniformidade das pedras. Corrigir esses detalhes é essencial para garantir um acabamento de alto padrão e preservar a durabilidade das superfícies.</p>
+
+    <h2>1. Pressão excessiva no disco</h2>
+    <p>Aplicar força demais pode gerar aquecimento, desgaste prematuro do abrasivo e até microfissuras na pedra. O ideal é deixar o peso da ferramenta fazer o trabalho, mantendo a pressão uniforme.</p>
+
+    <h2>2. Sequência errada de grãos</h2>
+    <p>Pular etapas ou inverter a ordem dos grãos compromete o polimento. Sempre siga a sequência recomendada, respeitando a granulação crescente para alcançar o brilho ideal.</p>
+
+    <h2>3. Falta de refrigeração</h2>
+    <p>O polimento sem refrigeração adequada aumenta a temperatura e pode danificar o material. Use sempre água suficiente para manter o abrasivo e a superfície resfriados.</p>
+
+    <h2>4. Uso de abrasivo gasto</h2>
+    <p>Abrasileiros desgastados perdem eficiência e causam riscos ou manchas. Substitua-os regularmente para garantir uniformidade e economia de tempo.</p>
+
+    <h2>5. Limpeza incorreta da superfície</h2>
+    <p>Resíduos de pó ou lama entre etapas prejudicam o acabamento. Lave e seque a peça antes de trocar o abrasivo para evitar contaminações entre grãos.</p>
+
+    <p>Cada detalhe influencia diretamente o resultado final — e o uso do <strong>abrasivo certo</strong>, aliado à técnica adequada, faz toda a diferença no brilho e uniformidade da pedra.</p>
+
+    <a href="https://wa.me/5511941093427?text=Olá!%20Quero%20saber%20mais%20sobre%20os%20abrasivos%20Eternix." target="_blank" rel="noopener" class="cta">💬 Fale com a Eternix no WhatsApp</a>
+  </main>
+
+  <footer>© 2025 Eternix — Foco no que te faz crescer.</footer>
+</body>
+</html>
