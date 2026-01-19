@@ -50,77 +50,14 @@ h2{ font-size:28px; margin-bottom:16px; color:#0b1324; text-align:center; }
 .card{ background:#fff; border:1px solid #eee; border-radius:12px; padding:20px; box-shadow:0 4px 24px rgba(0,0,0,.05); transition:transform .25s ease, box-shadow .25s ease; overflow:hidden; }
 .card:hover{ transform:translateY(-2px); box-shadow:0 6px 20px rgba(0,0,0,.08); }
 .card h3{ text-align:center; margin:18px 0 10px; line-height:1.3; color:var(--dark); }
-
 .thumb{ position:relative; overflow:hidden; border-radius:12px; }
 .thumb img{ display:block; width:100%; height:auto; transition:transform .35s ease; }
-
-/* ✅ NOVO: “tile” para links (resolve clique quebrado no mobile) */
-.tile{ display:block; text-decoration:none; color:inherit; border-radius:12px; }
-.tile.zoom:hover .thumb img{ transform:scale(1.03); }
-.tile:focus-visible{ outline:3px solid rgba(10,186,181,.35); outline-offset:3px; }
-
+.card.zoom:hover .thumb img{ transform:scale(1.03); }
 .thumb-cta{ position:absolute; right:10px; bottom:10px; background:var(--tiffany); color:#fff; padding:6px 10px; border-radius:999px; font-size:.85rem; }
-
-.product-img{
-  width:100%;
-  height:auto;
-  max-height:420px;
-  object-fit:contain;
-  border-radius:12px;
-  display:block;
-  margin:0 auto 15px;
-  cursor:zoom-in;
-  transition:transform .25s ease, box-shadow .25s ease;
-  pointer-events:none; /* ✅ importantíssimo: o clique vai pro <a> */
-}
-
-.tile-link{ display:block; text-decoration:none; color:inherit; }
-.tile-link:focus-visible{ outline:3px solid rgba(10,186,181,.35); outline-offset:3px; }
-
+.product-img{ width:100%; height:auto; max-height:420px; object-fit:contain; border-radius:12px; display:block; margin:0 auto 15px; cursor:zoom-in; transition:transform .25s ease, box-shadow .25s ease; }
+.product-img:hover{ transform:scale(1.02); box-shadow:0 6px 18px rgba(0,0,0,.12); }
 .catalogo-abrasivos, .catalogo-ferramentas{ margin-top:20px; gap:24px; justify-items:center; }
-
 footer{ padding:32px 0; text-align:center; border-top:1px solid #eee; background:#fff; }
-
-/* ✅ BLOCO MERCADO LIVRE (NOVO) */
-.ml-section h2{ margin-bottom:18px; }
-.ml-card{
-  background:#fff;
-  border:1px solid #eef2f2;
-  border-radius:16px;
-  padding:28px;
-  box-shadow:0 10px 35px rgba(0,0,0,.06);
-}
-.ml-grid{
-  display:grid;
-  grid-template-columns:1.1fr .9fr;
-  gap:26px;
-  align-items:center;
-}
-.ml-badge{
-  display:inline-block;
-  background:#e8fffd;
-  color:var(--tiffany);
-  font-weight:800;
-  padding:6px 12px;
-  border-radius:999px;
-  margin-bottom:10px;
-  font-size:.9rem;
-}
-.ml-actions{
-  display:flex;
-  flex-wrap:wrap;
-  gap:12px;
-  margin-top:14px;
-}
-.ml-img{
-  width:100%;
-  max-width:420px;
-  height:auto;
-  display:block;
-  margin:0 auto;
-  border-radius:14px;
-  box-shadow:0 12px 30px rgba(0,0,0,.10);
-}
 
 /* === RESPONSIVIDADE === */
 @media (max-width: 900px){
@@ -144,20 +81,23 @@ footer{ padding:32px 0; text-align:center; border-top:1px solid #eee; background
   .btn-lg{ width:100%; text-align:center; }
   .social-row{ font-size:14px; }
   .product-img{ max-height: 300px; }
-
-  .ml-card{ padding:20px; }
-  .ml-grid{ grid-template-columns:1fr; text-align:left; }
-  .ml-actions .btn{ width:100%; text-align:center; }
 }
-
 @media (prefers-reduced-motion: reduce){
   *{ animation:none !important; transition:none !important; }
 }
-
 /* iPhone / camadas */
 .hero { position: relative; }
 .hero-overlay { position: absolute; inset: 0; z-index: 0; pointer-events: none; }
 .hero-inner { position: relative; z-index: 1; }
 .site-header { position: sticky; top: 0; z-index: 1000; background: #ffffff; -webkit-backdrop-filter: none; backdrop-filter: none; }
+html { scroll-behavior: smooth; }
 .hero-img { display:block; max-width:100%; height:auto; }
 a, button { -webkit-tap-highlight-color: rgba(0,0,0,0.08); }
+
+/* ✅ AJUSTES MÍNIMOS PRA VOLTAR A CLICAR (SEM MUDAR O LAYOUT) */
+.catalogo-abrasivos a,
+.catalogo-ferramentas a { display:block; }
+
+.catalogo-abrasivos .product-img,
+.catalogo-ferramentas .product-img,
+.grid-2 .product-img { pointer-events:none; }
