@@ -52,10 +52,57 @@
     "name": "Eternix",
     "url": "https://eternix.com.br/",
     "logo": "https://eternix.com.br/assets/favicon.svg",
-    "sameAs": ["https://www.instagram.com/eternix.oficial","https://wa.me/5511941093427"],
+    "sameAs": [
+      "https://www.instagram.com/eternix.oficial",
+      "https://wa.me/5519997154694"
+    ],
     "description": "Insumos, abrasivos, colas e acessórios para marmorarias com qualidade e entrega ágil."
   }
   </script>
+
+  <!-- Estilos pequenos do bloco Mercado Livre (pode ficar aqui no head mesmo) -->
+  <style>
+    .ml-wrap{ margin-top: 34px; }
+    .ml-card{
+      display:grid;
+      grid-template-columns: 1.05fr .95fr;
+      gap: 20px;
+      align-items:center;
+      border: 1px solid #eee;
+      border-radius: 14px;
+      padding: 18px;
+      background: #fff;
+      box-shadow: 0 6px 22px rgba(0,0,0,.06);
+      overflow:hidden;
+    }
+    .ml-card h3{ margin: 0 0 8px; text-align:left; color: #0a918c; }
+    .ml-card p{ margin: 0 0 12px; color:#334155; line-height:1.45; }
+    .ml-actions{ display:flex; flex-wrap:wrap; gap:10px; margin-top: 12px; }
+    .ml-img{
+      width: 100%;
+      height:auto;
+      border-radius: 12px;
+      border: 1px solid #f1f1f1;
+      display:block;
+    }
+    .ml-badge{
+      display:inline-block;
+      font-size: 12px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(10,186,181,.12);
+      color:#0a918c;
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+    @media (max-width: 900px){
+      .ml-card{ grid-template-columns: 1fr; }
+      .ml-card h3{ text-align:center; }
+      .ml-card p{ text-align:center; }
+      .ml-actions{ justify-content:center; }
+    }
+  </style>
+
 </head>
 <body>
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M7RHZJDN" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -79,12 +126,15 @@
     <div class="hero-overlay"></div>
     <div class="container hero-inner">
       <div class="hero-text reveal">
-        <h1> Tudo o que sua marmoraria precisa — <span class="brand-grad">qualidade, confiança e entrega rápida.</span></h1>
+        <h1>Tudo o que sua marmoraria precisa — <span class="brand-grad">qualidade, confiança e entrega rápida.</span></h1>
         <p class="lead">Abrasivos, colas e ferramentas profissionais com suporte técnico e envio para todo o Brasil.</p>
+
         <div class="cta-row">
-          <a href="https://wa.me/5511941093427?text=Olá!%20Quero%20um%20orçamento%20completo%20Eternix." target="_blank" rel="noopener" class="btn btn-lg btn-contrast">Peça seu orçamento agora</a>
+          <a href="https://wa.me/5519997154694?text=Olá!%20Quero%20um%20orçamento%20completo%20Eternix."
+             target="_blank" rel="noopener" class="btn btn-lg btn-contrast">Peça seu orçamento agora</a>
           <a href="#produtos" class="btn btn-lg btn-outline">Veja nossos produtos</a>
         </div>
+
         <div class="social-row">
           <a href="mailto:importadorask2025@gmail.com" class="link-ghost">E-mail</a><span class="dot">•</span>
           <a href="https://www.instagram.com/eternix.oficial" class="link-ghost" target="_blank" rel="noopener">Instagram</a><span class="dot">•</span>
@@ -146,7 +196,6 @@
             <a href="brocas.png" class="card zoom" target="_blank" rel="noopener">
               <div class="thumb"><img src="brocas.png" alt="Brocas e fresas diamantadas Eternix" class="product-img" loading="lazy" decoding="async"></div>
             </a>
-            <!-- pratinhos removidos daqui -->
           </div>
 
           <div class="grid-2" style="margin-top: 40px;">
@@ -204,6 +253,38 @@
               <span class="thumb-cta">Ver detalhes</span>
             </a>
           </div>
+
+          <!-- ===== NOVO: BLOCO MERCADO LIVRE (PU40) ===== -->
+          <div class="ml-wrap reveal">
+            <div class="ml-card">
+              <div>
+                <span class="ml-badge">Compra rápida</span>
+                <h3>PU40 no Mercado Livre</h3>
+                <p>
+                  Quer facilidade para comprar o PU? Você pode comprar diretamente no Mercado Livre.
+                  <br><strong>É distribuidor? Depósito? Quer comprar em larga escala?</strong> Chame no WhatsApp — fazemos um preço diferenciado.
+                </p>
+                <div class="ml-actions">
+                  <a class="btn btn-contrast btn-sm" target="_blank" rel="noopener"
+                     href="https://produto.mercadolivre.com.br/MLB-4291653959-caixa-de-cola-pu-eternix-400g-alta-performance-com-24un-_JM">
+                    Comprar no Mercado Livre
+                  </a>
+                  <a class="btn btn-outline btn-sm" target="_blank" rel="noopener"
+                     href="https://wa.me/5519997154694?text=Olá!%20Tenho%20interesse%20em%20comprar%20PU%20em%20largo%20escala.%20Podem%20me%20passar%20um%20preço%20diferenciado%3F">
+                    Falar no WhatsApp (atacado)
+                  </a>
+                </div>
+              </div>
+
+              <a target="_blank" rel="noopener"
+                 href="https://produto.mercadolivre.com.br/MLB-4291653959-caixa-de-cola-pu-eternix-400g-alta-performance-com-24un-_JM"
+                 aria-label="Abrir anúncio da Cola PU40 Eternix no Mercado Livre">
+                <img class="ml-img" src="eternix%20ml.png" alt="Anúncio do PU40 Eternix no Mercado Livre">
+              </a>
+            </div>
+          </div>
+          <!-- ===== /NOVO: BLOCO MERCADO LIVRE ===== -->
+
         </div>
       </div>
     </div>
@@ -228,7 +309,9 @@
       <h2 class="reveal">Contato</h2>
       <div class="cta-row">
         <a class="btn btn-lg btn-contrast" href="mailto:importadorask2025@gmail.com">importadorask2025@gmail.com</a>
-        <a class="btn btn-lg btn-outline" href="https://wa.me/5511941093427?text=Olá!%20Quero%20um%20orçamento%20Eternix." target="_blank" rel="noopener">WhatsApp</a>
+        <a class="btn btn-lg btn-outline"
+           href="https://wa.me/5519997154694?text=Olá!%20Quero%20um%20orçamento%20Eternix."
+           target="_blank" rel="noopener">WhatsApp</a>
       </div>
     </div>
   </section>
@@ -237,35 +320,4 @@
     <div class="container"><p>© <span id="ano"></span> Eternix — Todos os direitos reservados.</p></div>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollTrigger.min.js"></script>
-  <script>
-    document.getElementById('ano').textContent = new Date().getFullYear();
-    if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches && window.gsap) {
-      gsap.registerPlugin(ScrollTrigger);
-      gsap.utils.toArray('.reveal').forEach(function(el){
-        gsap.from(el, { opacity: 0, y: 30, duration: 0.7, ease: "power2.out",
-          scrollTrigger: { trigger: el, start: "top 85%" }});
-      });
-      gsap.from('.hero-img', {opacity:0, y:20, duration:0.8, ease:"power2.out"});
-    }
-  </script>
-  <script>
-    (function(){
-      const header=document.querySelector('.site-header');
-      const getHeadH=()=>header?header.offsetHeight:0;
-      function scrollWithOffset(target){
-        const y=target.getBoundingClientRect().top+window.pageYOffset-getHeadH()-8;
-        window.scrollTo({top:y,behavior:'smooth'});
-      }
-      document.querySelectorAll('a[href^="#"]').forEach(a=>{
-        a.addEventListener('click',e=>{
-          const id=a.getAttribute('href').slice(1);
-          const el=document.getElementById(id);
-          if(el){ e.preventDefault(); scrollWithOffset(el); }
-        });
-      });
-    })();
-  </script>
-</body>
-</html>
+  <script src="
